@@ -1,0 +1,1 @@
+INSERT INTO TB_BOOK (titulo, autor, preco) VALUES ('George Orwell','To Kill a Mockingbird',10.00);

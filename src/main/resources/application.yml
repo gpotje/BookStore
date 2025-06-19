@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    client:
+      client-secret: 123
+      scope: password
+      client-id: delivery
+  
+ 
+server:
+  servlet:
+    context-path: /api/v1/   
+    
+spring:
+  profiles:
+    active: dev
+    
+  
