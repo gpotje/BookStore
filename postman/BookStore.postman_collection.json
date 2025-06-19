@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "6a75cf7b-c928-40d7-b804-9e025ea33971",
+		"name": "BookStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13136634",
+		"_collection_link": "https://dark-sunset-679944.postman.co/workspace/Multbroker~fae9587a-9e30-4214-9bec-b9013100125a/collection/13136634-6a75cf7b-c928-40d7-b804-9e025ea33971?action=share&source=collection_link&creator=13136634"
+	},
+	"item": [
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/book/all?size=2&pageNumber=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"all"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

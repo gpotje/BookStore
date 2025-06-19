@@ -12,21 +12,21 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Entity
 @Table(name = "tb_book")
-public class Book {
+public class BookEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String titulo;
+    private String title;
 
-    private String autor;
+    private String author;
 
     @Column(precision = 10, scale = 2)
-    private BigDecimal preco;
+    private BigDecimal price;
 
 
-    public Book(){
+    public BookEntity(){
 
     }
 
