@@ -22,6 +22,8 @@ public class BookEntity {
 
     private String author;
 
+    private String genre;
+
     @Column(precision = 10, scale = 2)
     private BigDecimal price;
 

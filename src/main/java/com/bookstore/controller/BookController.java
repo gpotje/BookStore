@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/book")
+@RequestMapping("/books")
 public class BookController {
 
     @Autowired
     private BookService service;
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<Page<BookDto>> findAll(Pageable p){
         return new ResponseEntity<>(service.findAll(p), HttpStatus.OK);
     }
 
-    @GetMapping("/findBookById/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<BookDto> findBookById(@PathVariable Long id){
         return new ResponseEntity<>(service.findBookById(id), HttpStatus.OK);
     }
