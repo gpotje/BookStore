@@ -23,7 +23,8 @@ public class BookService extends ServicesBase{
     }
 
     public BookDto findBookById(Long id){
-        return convertEntityToDTO(findByIdOrThrowBadRequestException(id),BookDto.class);
+        BookEntity bookEntity = findByIdOrThrowBadRequestException(id);
+        return new BookDto(bookEntity);
     }
 
     public Page<BookDto> findAll(Pageable p) {
