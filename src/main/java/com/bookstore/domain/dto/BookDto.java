@@ -4,11 +4,13 @@ import com.bookstore.domain.entities.BookEntity;
 import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class BookDto {
 
     public BookDto(BookEntity book){
